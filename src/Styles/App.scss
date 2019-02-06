@@ -1,0 +1,17 @@
+@import "reset";
+@import "config";
+@import "Header";
+@import "SideDrawer";
+@import "Backdrop";
+@import "media";
+
+.App{
+  height: 100%;
+  font-family: "Play", sans-serif;
+
+  main {
+    position: relative;
+    top: 125px;
+  }
+  
+}
