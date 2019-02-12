@@ -7,6 +7,14 @@ $shadow: 0px 0px 3px 3px rgba($secondaryColor, 0.5);
   transition: all 0.3s ease-out;
 }
 
+@mixin primaryShadow {
+  border-shadow: 0px 0px 3px 3px rgba($primaryColor, 0.5); 
+}
+
+@mixin secondaryShadow {
+  border-shadow: 0px 0px 3px 3px rgba($secondaryColor, 0.5); 
+}
+
 // Set Text Color
 @function set-text-color($color) {
   @if (lightness($color) > 40) {

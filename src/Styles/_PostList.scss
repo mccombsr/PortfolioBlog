@@ -1,5 +1,38 @@
 .postList {
-//   background: lighten($primaryColor, 15%);
+  //   background: lighten($primaryColor, 15%);
   color: black;
-//   height: 100vh;
+  //   height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .postThumbnail {
+    width: 80vw;
+    height: 15vh;
+    background: $primaryColor;
+    border: 1px solid $secondaryColor;
+    box-shadow: 6px 5px 5px $primaryColor;
+    // @include secondaryShadow;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    img {
+      width: 25%;
+      height: 100%;
+    }
+
+    .postTitle {
+    //   background: yellow;
+      width: 75%;
+      height: 25%;
+      text-align: center;
+    }
+
+    .postBlurb {
+      background: purple;
+      width: 75%;
+    }
+  }
 }
