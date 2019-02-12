@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./Components/Header";
 import SideDrawer from './Components/SideDrawer';
 import Backdrop from './Components/Backdrop';
+import PostList from './Components/PostList';
 import "./Styles/App.scss";
 
 class App extends Component {
@@ -23,11 +24,10 @@ class App extends Component {
   }
 
   render() {
-    // let sideDrawer;
+    // Logic for opening and closing sideDrawer backdrop
     let backdrop;
 
     if(this.state.sideDrawerOpen){
-      // sideDrawer = <SideDrawer toggleDrawer={this.handleSideDrawer}/>
       backdrop = <Backdrop clickHandler={this.backdropClickHandler}/>
     }
 
@@ -36,11 +36,8 @@ class App extends Component {
         <Header toggleDrawer={this.handleSideDrawer}/>
         <SideDrawer show={this.state.sideDrawerOpen}
         toggleDrawer={this.handleSideDrawer}/>
-        {/* {sideDrawer} */}
         {backdrop}
-        <main>
-          <p>This is the content of the page!!!</p>
-        </main>
+        <PostList/>
       </div>
     );
   }

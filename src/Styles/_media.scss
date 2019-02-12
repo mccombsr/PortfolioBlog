@@ -12,10 +12,20 @@
 
 // Smartphones
 @include mediaSm {
+  /**********************************************
+  * Couldn't get this to work for some reason.
+  * Decided to just keep the header height the
+  * same across the board for now. Will
+  * revisit.
+  *********************************************/
+  // main {
+  //   position: relative;
+  //   top: 80px;
+  // }
+
   //Header
   .headerContainer {
-    height: 80px;
-
+    // height: 80px;
 
     .headerTitle {
       font-size: 2.5rem;

@@ -3,15 +3,17 @@
 @import "Header";
 @import "SideDrawer";
 @import "Backdrop";
+@import "PostList";
 @import "media";
 
-.App{
-  height: 100%;
+.App {
+  height: auto;
+  min-height: 100vh;
   font-family: "Play", sans-serif;
+  background: lighten($primaryColor, 15%);
 
   main {
     position: relative;
-    top: 125px;
+    padding-top: 125px;
   }
-  
 }
