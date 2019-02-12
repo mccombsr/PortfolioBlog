@@ -36,6 +36,9 @@
     }
     &:hover {
       background: $secondaryColor;
+      // box-shadow: 0px 0px 3px 3px rgba($secondaryColor, 0.5);
+      box-shadow: $shadow;
+      @include easeOut;
       cursor: pointer;
 
       .menuLine {

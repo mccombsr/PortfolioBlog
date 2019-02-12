@@ -23,18 +23,20 @@ class App extends Component {
   }
 
   render() {
-    let sideDrawer;
+    // let sideDrawer;
     let backdrop;
 
     if(this.state.sideDrawerOpen){
-      sideDrawer = <SideDrawer toggleDrawer={this.handleSideDrawer}/>
+      // sideDrawer = <SideDrawer toggleDrawer={this.handleSideDrawer}/>
       backdrop = <Backdrop clickHandler={this.backdropClickHandler}/>
     }
 
     return (
       <div className="App">
         <Header toggleDrawer={this.handleSideDrawer}/>
-        {sideDrawer}
+        <SideDrawer show={this.state.sideDrawerOpen}
+        toggleDrawer={this.handleSideDrawer}/>
+        {/* {sideDrawer} */}
         {backdrop}
         <main>
           <p>This is the content of the page!!!</p>
