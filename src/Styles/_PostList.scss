@@ -12,8 +12,9 @@
     height: 15vh;
     background: $primaryColor;
     border: 1px solid $secondaryColor;
-    box-shadow: 6px 5px 5px $primaryColor;
+    box-shadow: 2px 2px 2px $primaryColor;
     // @include secondaryShadow;
+    margin-top: 35px;
 
     display: flex;
     flex-wrap: wrap;
@@ -24,15 +25,16 @@
     }
 
     .postTitle {
-    //   background: yellow;
-      width: 75%;
+      //   width: 75%;
+      color: $secondaryColor;
       height: 25%;
-      text-align: center;
+      padding: 5px 5px;
+      //   text-align: center;
     }
 
     .postBlurb {
-      background: purple;
-      width: 75%;
+      //   background: purple;
+      //   width: 75%;
     }
   }
 }

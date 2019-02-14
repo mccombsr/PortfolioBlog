@@ -9,7 +9,7 @@ export default class PostList extends Component{
     render(props){
         return(
             <main className='postList'>
-                <p>This is the page content!!!</p>
+                {/* <p>This is the page content!!!</p> */}
                 <div className="postThumbnail">
                     <img src="https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg" alt="Post Image Thumbnail"/>
                     <h1 className="postTitle">Dummy Post</h1>
@@ -19,7 +19,7 @@ export default class PostList extends Component{
                         <h2 className="commentNum">88</h2>
                     </aside>
                 </div>
-                <p>I'm the bottom!!!</p>
+                {/* <p>I'm the bottom!!!</p> */}
             </main>
         )
     }

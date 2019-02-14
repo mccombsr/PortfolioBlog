@@ -22,7 +22,7 @@
   .menuIcon {
     width: 45px;
     height: 45px;
-    border: 2px solid $secondaryColor;
+    border: 1px solid $secondaryColor;
     border-radius: 10px;
     margin-right: 45px;
 
@@ -39,7 +39,7 @@
     }
     &:hover {
       background: $secondaryColor;
-      // box-shadow: 0px 0px 3px 3px rgba($secondaryColor, 0.5);
+      border: 1px solid $primaryColor;
       box-shadow: $shadow;
       @include easeOut;
       cursor: pointer;
