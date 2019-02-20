@@ -13,18 +13,38 @@
     background: $primaryColor;
     border: 1px solid $secondaryColor;
     box-shadow: 2px 2px 2px $primaryColor;
-    // @include secondaryShadow;
     margin-top: 35px;
+    overflow: auto;
 
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "image title title title"
+      "image blurb blurb blurb"
+      "date . . comment";
 
-    img {
-      width: 25%;
-      height: 100%;
+    // display: flex;
+    // flex-wrap: wrap;
+
+    // img {
+    //   grid-area: image;
+    //   // width: 25%;
+    //   // height: 100%;
+    //   // background-size: cover;
+    //   // background-repeat: no-repeat;
+    //   // background-position: 50% 50%;
+    // }
+    .image {
+      grid-area: image;
+      // width: 25%;
+      // height: 100%;
+      background-image: url("https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg");
+      background-size: cover;
     }
 
     .postTitle {
+      grid-area: title;
       //   width: 75%;
       color: $secondaryColor;
       height: 25%;
@@ -33,8 +53,21 @@
     }
 
     .postBlurb {
-      //   background: purple;
-      //   width: 75%;
+      grid-area: blurb;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      margin: 5px;
+    }
+
+    .postDate {
+      grid-area: date;
+      margin: 5px 0px 0px 5px;
+    }
+
+    .commentNum {
+      grid-area: comment;
+      margin: 5px 5px 0px 0px;
     }
   }
 }
